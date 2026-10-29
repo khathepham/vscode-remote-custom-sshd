@@ -92,12 +92,12 @@ Reference: internal Confluence page *Remote Debugging Direct SSH Tunnel*.
 
       ```text
       Please run the following script on <server>:
-      $ sudo /usr/sbin/sshd -f /home/<lan_id>/custom_ssh/sshd_config
+      $ sudo /usr/sbin/sshd -f <home>/custom_ssh/sshd_config
       $ echo "----- Process ID : ${HOME}/custom_ssh/sshd.pid -------"
 
       Note: There should not be any errors.
       ```
-
+      - Note: replace <home> with your home directory on the target server. You can get this by executing `cat ${HOME}` on the server.
 5. Once that is complete, on your local computer, create and edit this file: `C:\Users\<LAN_ID>\.ssh\config`
 
    ```text
